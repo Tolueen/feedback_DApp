@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback DApp</title>
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback DApp</h1>
+        <div id="walletStatus"></div>
+        <button id="connectWalletBtn">Connect Wallet</button>
+        
+        <form id="feedbackForm" style="display: none;">
+            <label for="message">Enter your feedback:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <button type="submit" onclick="submitFeedback" >Submit Feedback</button>
+        </form>
+        
+        <ul id="feedbackList"></ul>
+    </div>
+
+    <script src="web3.min.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>
